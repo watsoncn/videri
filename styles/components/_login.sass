@@ -1,0 +1,52 @@
+html
+  background: url(../img/sydney-background.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  font-family: Avenir
+
+#login-trigger
+  position: absolute
+  right: 0
+  top: 0
+  color: white
+  cursor: pointer
+  margin-right: 20px
+  &:active
+    color: rgb(209, 209, 209)
+
+#displayLogin
+  margin: 0 auto
+  background-color: white
+  border-radius: 5px
+  height: 60vh
+  width: 60vw
+  background-color: rgb(242, 239, 239)
+  animation-name: login-box
+  animation-duration: 2s
+
+@keyframes login-box
+    from {opacity: 0}
+    to {opacity: 100}
+
+#hideLogin
+  display: none
+
+#login-header
+  color: rgb(242, 239, 239)
+  text-align: center
+  font-size: 5em
+  margin: 14vh 0 5vh 0
+
+#login-header-slide
+  color: rgb(242, 239, 239)
+  text-align: center
+  font-size: 5em
+  margin: 8vh 0 5vh 0
+  animation-name: login-header
+  animation-duration: 1s
+
+@keyframes login-header
+    from {margin: 14vh 0 5vh 0}
+    to {margin: 8vh 0 5vh 0}
